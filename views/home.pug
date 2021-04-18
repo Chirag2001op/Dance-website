@@ -1,0 +1,54 @@
+extends base.pug
+
+block scripts
+  script(src='/static/script.js')
+
+block style 
+   style
+    include  ../static/style.css
+
+block content   
+     nav#navbar 
+      ul 
+       div#logo 
+        img.abc(src="/static/logofinal.png", alt="slow connection")
+        div.acd CDA
+        li #[a(href="/") Home ]
+        li #[a(href="/") About ]
+        li #[a(href="/") Services ]
+        li #[a(href="/") Class info ]
+        li #[a(href="/") Contact ]
+
+      section#introSection 
+      div Welcome to Chinu's dance academy 
+      div.small   Eat Sleep Dance Repeat
+      
+      section#missionSection
+      h2 Our mission 
+      div.card 
+         h3 Dance perfection
+           div.card-box 
+            div.card-img 
+              img(src="/static/danceimg1removebg-preview.png")
+      div.card 
+         h3 Dance the way you like 
+          div.card-box 
+            div.card-img 
+             img(src="/static/danceimg3removebg-preview.png")
+      div.card 
+         h3 Expert teaching  
+          div.card-box 
+            div.card-img 
+             img(src="/static/danceimg2removebg-preview.png")
+
+      
+      section#sponsorsSection 
+      h2 Our sponsors
+        div#sponsors 
+          img(src="/static/amazon.png", alt="sponsor", class= "spimage" )
+          img(src="/static/microsoft.png", alt="sponsor", class= "spimage" )
+          img(src="/static/naughty america.png", alt="sponsor", class= "spimage" )
+          img(src="/static/brazzeers.png", alt="sponsor", class= "spimage" )
+
+     footer#footer 
+      | Copyright © ChinuDanceAcademy.com
